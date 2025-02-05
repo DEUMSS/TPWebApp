@@ -1,5 +1,296 @@
-.navBar{
+.navbar h1{
+    padding-top: 15px;
+    margin: 0;
+    font-size: 2rem;
+    color: violet;
+}
+
+.navbar h1:hover{
+    scale: 1.1;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 200vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    background: linear-gradient(#13181d, #20212e, #341b47);
+    padding-top: 2rem;
+
+}
+
+ul{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+ul p{
+    color: white;
+}
+
+ul p:hover{
+    cursor: pointer;
+    transition: 0.5s case-in-out;
+    color: grey;
+}
+
+.navbar button{
+    background-color: inherit;
+    border: 1px solid violet;
+    color: violet;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.navbar button:hover{
+    background-color: violet;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s case-in-out;
+}
+
+.sectionProduit{
     display: flex;
     justify-content: space-around;
+    margin: 2rem;
+    
+}
 
+.presProduit{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -2rem;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+.presProduit h1{
+    color: white;
+    font-size: 2rem;
+}
+
+.presProduit button{
+    width: 150px;
+    background-color: violet;
+    border: 1px solid violet;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.presProduit button:hover{
+    background-color: violet;
+    border: 1px solid violet;
+    color: white;
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+}
+
+.bigImage img{
+    scale: 0.8;
+}
+
+.smallImages{
+    margin-top: 10px;
+    gap: 10px;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.small{
+    display: flex;
+    justify-content: center;
+    background-color: #33314d;
+    border-radius: 10px;
+}
+
+.small img{
+    width: 120px;
+    height: 120px;
+}
+
+.small:hover{
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-color: black;
+}
+
+.section2{
+    background-color: rgb(15, 19, 23);
+}
+
+.menu{
+    display: none;
+}
+
+.selecteur{
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+}
+
+.bareSelecteur{
+    background-color: violet;
+    width: 150px;
+    height: 3px;
+    position: absolute;
+    left: 197px;
+    border-radius: 5px;
+}
+
+.connexion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.connexion form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;    
+}
+
+.connexion button{
+    width: 150px;
+    background-color: violet;
+    border: 1px solid violet;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.connexion input{
+    height: 30px;
+    width: 20rem;
+    border-radius: 10px;
+}
+
+.inscription{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.inscription form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+.inscription button{
+    width: 150px;
+    background-color: violet;
+    border: 1px solid violet;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.inscription input{
+    height: 30px;
+    width: 20rem;
+    border-radius: 10px;
+}
+
+.error{
+    display: none;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.errorBox{
+    border-radius: 10px;
+    text-align: center;
+    background-color: red;
+    font-size: 75%;
+    height: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+@media screen and (max-width: 450px) {
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 110vh;
+        background-color: black;
+        position: fixed;
+        right: -300px;
+        width: 300px;
+        top: 0;
+        transition: 0.5s ease-in-out;
+        z-index: 99999;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        position: absolute;
+        top: 25px;
+        right: 3px;
+        z-index: 999999999;
+    }
+    
+    .menu div{
+        background-color: white;
+        height: 3px;
+        width: 30px;
+    }
+ 
+    ul{
+        flex-direction: column;
+    }
+
+
+    .sectionProduit{
+        padding-top: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .presProduit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;        gap: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .bigImage{
+        scale: 0.8  ;
+    }
 }
