@@ -10,10 +10,9 @@
 <body>
     <header>
         <div id="selecteur" class="selecteur">
-            <h2>Connexion</h2>
-            <h2>Inscription</h2>
+            <h2 class="connect" id="connect">Connexion</h2>
+            <h2 class="suscribe" id="suscribe">Inscription</h2>
         </div>
-        <div id="bareSelecteur" class="bareSelecteur"></div>
 
         <div id="connexion" class="connexion">
             <h1>Connexion</h1>
@@ -27,14 +26,16 @@
             <h1>Inscription</h1>
             <form>
                 <input type="email" name="email" id="insEmail" placeholder="Email" required>
-                <input type="email" name="email" id="insEmailConfirm" placeholder="Confirmer l'email" required>
+                <input type="email" name="confirmEmail" id="insEmailConfirm" placeholder="Confirmer l'email" required>
                 <input type="password" name="password" id="insPassword" placeholder="Mot de passe">
                 <button type="button" id="insBTN">Inscription</button>
-                <div class="errorBox" id="errorBox"></div>
             </form>
         </div>
         <div id="divError" class="error">
             <div class="errorBox" id="errorBox"></div>
+        </div>
+        <div id="divValid" class="valid">
+            <div class="validBox" id="validBox"></div>
         </div>
     </header>
     <script src="connexion.js"></script>

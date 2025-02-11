@@ -153,15 +153,6 @@ body{
     justify-content: center;
 }
 
-.bareSelecteur{
-    background-color: violet;
-    width: 150px;
-    height: 3px;
-    position: absolute;
-    left: 197px;
-    border-radius: 5px;
-}
-
 .connexion{
     display: flex;
     align-items: center;
@@ -236,7 +227,22 @@ body{
     height: 2rem;
     padding-left: 10px;
     padding-right: 10px;
+}
 
+.valid{
+    display: none;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.validBox{
+    border-radius: 10px;
+    text-align: center;
+    background-color: green;
+    font-size: 75%;
+    height: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 @media screen and (max-width: 450px) {
